@@ -13,9 +13,10 @@ ini = datetime.datetime.now()
 #função e resultado
 n = 500
 result = fatorial(n)
-print(f'O fatorial de {n} é {result}')
+print(f'O fatorial de {n} é {result}.')
 
 #recolhe o tempo de fim da função, calcula e printa o resultado
-fim=datetime.datetime.now()
-tempo=fim-ini
-print(f'Tempo decorrido: {tempo}')
+fim = datetime.datetime.now()
+tempo = fim - ini
+
+print(f'Tempo decorrido: {tempo}.')
