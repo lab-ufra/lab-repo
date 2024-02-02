@@ -42,6 +42,7 @@ let respostaNao = document.getElementById('nao').addEventListener('click',()=>{
 
             novosBotoes.innerHTML = '<button id="sim_m">Sim.</button><button id="nao_m">Não.</button>'
 
+            //as arrow fuction dentro da era function que substituem os botoes originais por novos
             let mulherSim = document.getElementById('sim_m').addEventListener('click',()=>{
                 titulo.innerHTML = 'Puta, vadia, vagabunda, piranha';
 
