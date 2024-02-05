@@ -1,69 +1,65 @@
+//importação dos audios:
+let audUm = new Audio('./assets/som-do-click-um.mp3.mp3')
+let audDois = new Audio('./assets/som-do-click-dois.mp3');
+
+//variaveis globais
+let corpo = document.getElementsByClassName('corpo')[0]; //a função .getElementsByClassName() retorna uma array
+let titulo = document.getElementById('titulo');
+let subtitulo = document.getElementById('subtitulo');
+let pergunta = document.getElementById('pergunta');
+let divAtual = document.getElementById('botoes');
+
 //função de click sim
 let respostaSim = document.getElementById('sim').addEventListener('click',()=>{
-    let corpo = document.getElementsByClassName('corpo')[0];
-        corpo.style.backgroundColor = '#ff1fc7';
+    audDois.play();
 
-        var novaDiv = document.createElement('div');
-        var texto =  document.createTextNode('');
-            novaDiv.appendChild(texto);
+    corpo.style.backgroundColor = '#ff1fc7';
+
+        let novaDiv = document.createElement('div');
+        let texto =  document.createTextNode('');
+                novaDiv.appendChild(texto);
     
-        let divAtual = document.getElementById('botoes');
-            document.body.insertBefore(novaDiv,divAtual);
+                document.body.insertBefore(novaDiv,divAtual);
+                    novaDiv.innerHTML = '<a href="https://bit.ly/rickroll-010">Agora, clique aqui</a>';
 
-                novaDiv.innerHTML = '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Agora, clique aqui</a>';
+                    titulo.innerHTML = 'Arrasou, bicha!'
 
-        let titulo = document.getElementById('titulo');
-            titulo.innerHTML = 'Arrasou, bicha!'
-
-        let sub = document.getElementById('subtitulo');
-            sub.remove();
-        
-        let h2 = document.getElementById('pergunta');
-            h2.remove();
-
-            divAtual.remove();
+                    subtitulo.remove();
+                    pergunta.remove();
+                    divAtual.remove();
 })
 
+//função de click não:
 let respostaNao = document.getElementById('nao').addEventListener('click',()=>{
+    titulo.innerHTML = 'Bem-vinda à web, Fª.D.P!';
+    pergunta.innerHTML = 'Então, você é mulher mesmo, né?';
 
-    let titulo = document.getElementById('titulo');
-        titulo.innerHTML = 'Bem-vinda à web, Fª.D.P!';
+        //cria uma nova div contendo novos botões:
+        let novosBotoes = document.createElement('div');
+        let botoes = document.createTextNode('');
+                novosBotoes.appendChild(botoes);
 
-    let cabecalho = document.getElementById('pergunta');
-        cabecalho.innerHTML = 'Então, você é mulher mesmo, né?';
+                document.body.insertBefore(novosBotoes,divAtual);
+                    novosBotoes.innerHTML = '<button id="sim_m">Sim.</button><button id="nao_m">Não.</button>'
+                    
+                    divAtual.remove();
 
-    let novosBotoes = document.createElement('div');
-    let botoes = document.createTextNode('');
-        novosBotoes.appendChild(botoes);
+                //funções para os novos botões:
+                let mulherSim = document.getElementById('sim_m').addEventListener('click',()=>{
+                    titulo.innerHTML = 'Você é uma: ';
+                        novosBotoes.innerHTML = '<a href="https://bit.ly/rickroll-009">Agora, clique aqui</a>';
+                        
+                        subtitulo.remove();        
+                        pergunta.remove();
 
-    let divAtual = document.getElementById('botoes');
-        document.body.insertBefore(novosBotoes,divAtual);
-            divAtual.remove();
+                    audUm.play();
+                }); //fim da função de click mulher sim
 
-            novosBotoes.innerHTML = '<button id="sim_m">Sim.</button><button id="nao_m">Não.</button>'
+                let mulherNao = document.getElementById('nao_m').addEventListener('click',()=>{
+                    titulo.innerHTML = 'Pois é um viado! E ainda por cima, é um mentiroso!';
+                        novosBotoes.innerHTML = '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Agora, clique aqui</a>';
 
-            //as arrow fuction dentro da era function que substituem os botoes originais por novos
-            let mulherSim = document.getElementById('sim_m').addEventListener('click',()=>{
-                titulo.innerHTML = 'Puta, vadia, vagabunda, piranha';
-
-                let sub = document.getElementById('subtitulo');
-                    sub.remove();
-            
-                let h2 = document.getElementById('pergunta');
-                    h2.remove();
-
-                    novosBotoes.innerHTML = '<a href="https://www.youtube.com/watch?v=bg13nNe2qG4">Agora, clique aqui</a>';
-            });
-
-            let mulherNao = document.getElementById('nao_m').addEventListener('click',()=>{
-                titulo.innerHTML = 'Pois é um viado! E ainda por cima, é um mentiroso!';
-
-                let sub = document.getElementById('subtitulo');
-                    sub.remove();
-            
-                let h2 = document.getElementById('pergunta');
-                    h2.remove();
-
-                    novosBotoes.innerHTML = '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Agora, clique aqui</a>';
-            });
-})
+                        subtitulo.remove();
+                        pergunta.remove();
+                });//fim da função de click mulher não
+})//função de click não
