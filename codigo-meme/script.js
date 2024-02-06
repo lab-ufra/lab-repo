@@ -1,5 +1,5 @@
 //importação dos audios:
-let audUm = new Audio('./assets/som-do-click-um.mp3.mp3')
+let audUm = new Audio('./assets/som-do-click-um.mp3')
 let audDois = new Audio('./assets/som-do-click-dois.mp3');
 
 //variaveis globais
@@ -31,6 +31,7 @@ let respostaSim = document.getElementById('sim').addEventListener('click',()=>{
 
 //função de click não:
 let respostaNao = document.getElementById('nao').addEventListener('click',()=>{
+    corpo.style.backgroundColor = '#ff61f2';
     titulo.innerHTML = 'Bem-vinda à web, Fª.D.P!';
     pergunta.innerHTML = 'Então, você é mulher mesmo, né?';
 
@@ -46,6 +47,7 @@ let respostaNao = document.getElementById('nao').addEventListener('click',()=>{
 
                 //funções para os novos botões:
                 let mulherSim = document.getElementById('sim_m').addEventListener('click',()=>{
+                    corpo.style.backgroundColor = 'red';
                     titulo.innerHTML = 'Você é uma: ';
                         novosBotoes.innerHTML = '<a href="https://bit.ly/rickroll-009">Agora, clique aqui</a>';
                         
@@ -56,6 +58,7 @@ let respostaNao = document.getElementById('nao').addEventListener('click',()=>{
                 }); //fim da função de click mulher sim
 
                 let mulherNao = document.getElementById('nao_m').addEventListener('click',()=>{
+                    corpo.style.backgroundColor = '#ff1fc7';
                     titulo.innerHTML = 'Pois é um viado! E ainda por cima, é um mentiroso!';
                         novosBotoes.innerHTML = '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Agora, clique aqui</a>';
 
