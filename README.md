@@ -19,4 +19,4 @@ janeiro, 24, 12.024 da Era Humana. 07:52pm. Git configurado em outro computador 
 
 fevereiro, 1, 12.024 da Era Humana. 07:59pm. Git configurado em outro computador do laboratório.
 
-teste
+fevereiro, 22, 12.024 da Era Humana. 07:59pm. Git recofigurado.
