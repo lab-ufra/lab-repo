@@ -1,0 +1,17 @@
+.glass-error {
+    background: rgba(255, 24, 24, 0.3);
+    backdrop-filter: blur(0px);
+    
+    border: solid 1px #ff1818;
+    
+    color: #ff1818;
+}
+
+.glass-success {
+    background: rgba(24, 255, 63, 0.3);
+    backdrop-filter: blur(0px);
+    
+    border: solid 1px #18ff3f;
+    
+    color: #18ff3f;
+}
