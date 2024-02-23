@@ -25,11 +25,12 @@ import { input_glass } from "./objects/input_glass.js";
         if(key==='Enter'){
             if(input_value>10){
                 screen.render_result(invalid_input);
-                input_glass.reflect_error()
+                input_glass.reflect_error();
                 data_input.value = '';
                 return;
             } else {
                 screen.render_result(success);
+                input_glass.reflect_sucess();
             }
         }
     })
