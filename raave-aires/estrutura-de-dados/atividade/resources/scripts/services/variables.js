@@ -1,5 +1,5 @@
 //elementos da página
-const data_input = document.getElementById('score_in');
+// const data_input = document.getElementById('score_in');
 
 const invalid_input = "Nota inválida. Digite um valor entre 0 e 10."
 const success = "A nota foi salva com sucesso."
@@ -27,4 +27,7 @@ let audio = {
     memory_reboot: new Audio('./resources/assets/audios/memory-reboot.mp3'),
     is_playing: false
 }
-export { data_input, invalid_input, success, buttons, time_element, date_element, month_names, audio }
+
+const field = document.getElementById('input_field');
+
+export { invalid_input, success, buttons, time_element, date_element, month_names, audio, field }

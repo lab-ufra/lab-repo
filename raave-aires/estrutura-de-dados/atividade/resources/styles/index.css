@@ -37,7 +37,7 @@ body {
     position: absolute;
     bottom: 15px;
 
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #date_orn {
@@ -54,9 +54,7 @@ body {
 
 #input_field {
     margin: 15px 15px 0 15px;
-    font-size: 14px;
-
-    display: none;
+    font-size: 16px;
 }
 
 .score_in {
