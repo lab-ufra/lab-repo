@@ -1,0 +1,1 @@
+# 1. Escreva uma função chamada `repeat` que tome uma lista e retorne True se houver algum elemento que apareça mais de uma vez. Ela não deve modificar a lista original.
