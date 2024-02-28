@@ -9,5 +9,5 @@ def repeating(list):
   return False
 
 
-test_list = [9, 18, 27, 36, 45, 54, 63, 72, 81]
-print(repeating(test_list))
+nines = [9, 18, 27, 36, 45, 54, 63, 72, 81]
+print(repeating(nines))
