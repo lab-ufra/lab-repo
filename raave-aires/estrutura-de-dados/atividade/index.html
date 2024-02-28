@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -10,23 +10,23 @@
         <link rel="stylesheet" href="./resources/styles/index.css">
         <link rel="stylesheet" href="./resources/styles/interactive.css">
         <link rel="stylesheet" href="./resources/styles/cursors.css">
+        <link rel="stylesheet" href="./resources/styles/glitch.css">
     <!-- Enlance de CSS. -->
 
     <!-- Enlance de JavaScript: -->
         <script defer type="module" src="./resources/scripts/services/time.js"></script>
-        <script defer type="module" src="./resources/scripts/services/buttons.js"></script>
         <script defer type="module" src="./resources/scripts/script.js"></script>
     <!-- Enlance de JavaScript. -->
 
-    
-    <title>Document</title>
+    <link rel="shortcut icon" href="./resources/assets/images/favicon.png" type="image/x-icon">
+    <title>Projection</title>
 </head>
 
 <body>
     <main>
-        <section class="glass">
+        <section class="glass" id="glass">
             <div id="ornamental">
-                <p id="time_orn"></p>
+                <p class="mono"id="time_orn"></p>
                 <p class="mono" id="date_orn"></p>
                 <p class="mono" id="mf-1">RAAVË</p>
             </div>
@@ -43,7 +43,29 @@
             </div>
 
             <div id="title">
-                <h1>Hello, Synth-Boy!</h1>
+                <h1>HELLO, <span id="synth">SYNTHWORLD</span>!</h1>
+
+                    <br>
+                    <p>YOU CAN NAVIGATE THROUGH THE PROJECT USING THE BUTTONS AT THE TOP.</p>
+                    
+                    <br>
+                    <p>
+                        PRESS 1 FOR QUESTION 1.
+                        <br>PRESS 2 FOR QUESTION 2.
+                        <br>PRESS 3 FOR QUESTION 3.
+                    </p>
+                    
+                    <br>
+                    <p>AND SO ON.</p>
+
+                    <br>
+                    <p>THIS PAGE IS LICENSED UNDER THE <a href="https://www.gnu.org/licenses/gpl-3.0.en.html#license-text" target="_blank">GNU GENERAL PUBLIC LICENCE V3.0</a>, AND MADE AVAILABLE FOR DOWNLOAD, MODIFICATION AND DISTRIBUTION ON <a href="https://github.com/raave-public/atv-estrutura-de-dados" target="_blank">GITBUB</a>.</p>
+
+                    <br>
+                    <p>PLEASE CHECK AND ABIDE BY THE LICENSE TERMS.</p>
+                    
+                    <br>
+                    <p>ORIGINALLY CREATED BY RAAVË L. AIRES IN 12,024 OF THE <a href="https://www.youtube.com/watch?v=czgOWmtGVGs&t=7s" target="_blank">HUMAN ERA</a>.</p>
             </div>
             
             <div id="input_field">
@@ -57,7 +79,7 @@
     </main>
 
     <footer id="foot">
-        <img src="./resources/assets/images/qr-code.png" alt="">
+        <a href="https://github.com/raave-public/atv-estrutura-de-dados" target="_blank"><img src="./resources/assets/images/qr-code.png"alt="Código QR que leva para o repositório do GitHub desta página."></a>
     </footer>
 </body>
 

@@ -7,16 +7,23 @@ function add_zero(number) {
     return number;
 }
 
-setInterval(()=>{
+setInterval(() => {
     let current_time = new Date();
-        let hours = current_time.getHours();
-        let minutes = current_time.getMinutes();
-        let seconds = current_time.getSeconds();
+    let hours = current_time.getHours();
+    let minutes = current_time.getMinutes();
+    let seconds = current_time.getSeconds();
 
-            minutes = add_zero(minutes);
-            seconds = add_zero(seconds);
+    // Verifica se é AM ou PM
+    let am_pm = hours >= 12 ? 'PM' : 'AM';
 
-                time_element.textContent = `${hours}:${minutes}:${seconds}`
+    // Converte para o formato de 12 horas
+    hours = hours % 12 || 12;
+
+    hours = add_zero(hours);
+    minutes = add_zero(minutes);
+    seconds = add_zero(seconds);
+
+    time_element.textContent = `${hours}:${minutes}:${seconds} ${am_pm}`;
 }, 1000);
 
 function display_current_date(){
@@ -27,7 +34,7 @@ function display_current_date(){
         const year_he = year + 10000;
 
             
-            date_element.textContent = `${day} ${month} ${year_he.toLocaleString('en-US')}`;
+            date_element.textContent = `${month} ${day} ${year_he.toLocaleString('en-US')}`;
 }
 
 display_current_date();
