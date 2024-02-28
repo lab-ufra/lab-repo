@@ -1,12 +1,14 @@
-1.Escreva uma função chamada `repeat` que tome uma lista e retorne True se houver algum elemento que apareça mais de uma vez. Ela não deve modificar a lista original.
+1.Escreva uma função chamada `repeating` que tome uma lista e retorne True se houver algum elemento que apareça mais de uma vez. Ela não deve modificar a lista original.
 
-2.Crie um programa onde o usuário possa digitar cinco valores numéricos e cadastre-os em uma lista, já na posição correta de inserção. No final, mostre a lista ordenada na tela.
+2. Crie um programa onde o usuário possa digitar cinco valores numéricos e cadastre-os em uma lista, já na posição correta de inserção. No final, mostre a lista ordenada na tela.
 
-3.Escreva uma função chamada `middle` que receba uma lista e retorne uma nova lista com todos os elementos originais, exceto os primeiros e os últimos elementos. Por exemplo:
+3. Escreva uma função chamada `middle` que receba uma lista e retorne uma nova lista com todos os elementos originais, exceto os primeiros e os últimos elementos. Por exemplo:
 
-4.Crie um programa que vai ler vários números e colocar em uma lista. Depois disso, crie duas listas extras que vão conter apenas os valores pares e os valores ímpares digitados, respectivamente. Ao final, mostre o conteúdo das três listas geradas.
+![alt text](image.png)
 
-5.Crie um programa que vai ler vários números e colocar em uma lista. Depois disso, mostre: 
+4. Crie um programa que vai ler vários números e colocar em uma lista. Depois disso, crie duas listas extras que vão conter apenas os valores pares e os valores ímpares digitados, respectivamente. Ao final, mostre o conteúdo das três listas geradas.
+
+5. Crie um programa que vai ler vários números e colocar em uma lista. Depois disso, mostre: 
     a) Quantos números foram digitados. 
     b) A lista de valores, ordenada de forma decrescente. 
     c) Se o valor 5 foi digitado e está ou não na lista.
