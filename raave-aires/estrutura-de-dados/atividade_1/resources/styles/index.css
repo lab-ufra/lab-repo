@@ -14,6 +14,7 @@ body {
 
     /* background-image: linear-gradient(to top, #ff0000, #c20023, #820327, #420f1d, #000000); */
     background-image: url('../assets/images/synth-city.png');
+    background-size: cover;
 }
 
 a {
