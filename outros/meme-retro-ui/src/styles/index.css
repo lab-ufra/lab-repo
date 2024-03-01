@@ -1,0 +1,63 @@
+@font-face {
+    font-family: cinqcent;
+    src: url('../assets/fonts/cinqcent.woff2');
+}
+
+@font-face {
+    font-family: blender-book;
+    src: url('../assets/fonts/blender-pro/BlenderPro-Book.woff2');
+}
+
+#ambient {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    
+    background-image: url('../assets/images/synth-city.png');
+    background-size: cover;
+}
+
+#ambient header h1 {
+    font-family: cinqcent;
+    font-size: 58px;
+
+    margin: 0 0 10px 0;
+
+    color: #2de2e6;
+    text-shadow: #2de2e6;
+}
+
+#projection {
+    width: 400px;
+    height: 500px;
+
+    background: rgba(45, 226, 230, 0.5);
+    backdrop-filter: blur(2px);
+    border: solid 1px #2de2e6;
+    box-shadow: 0px 0px 78px 0px rgba(45, 226, 230, 0.9);
+
+    transition: all 1s ease;
+}
+
+#content {
+    margin: 15px;
+    color: white;
+}
+
+/* Foot: */
+#ambient footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ambient footer p {
+    font-family: blender-book;
+    font-size: 20px;
+
+    margin: 10px 0 0px 0;
+
+    color: #2de2e6;
+}
