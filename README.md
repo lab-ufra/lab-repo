@@ -1,7 +1,5 @@
 #READ
-
-
-
+março, 15, 12.024 da Era Humana. 08:13pm. Por favor, mantenha um padrão na pasta `lab-repo`, criando sub-pastas com seu nome e, dentro delas, outas sub-pastas da matéria e/ou atividade que está fazendo. Todos os arquivos são sincronizados no repositório [lab-repo](https://github.com/lab-ufra/lab-repo) no GitHub.
 
 
 
